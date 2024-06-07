@@ -50,7 +50,86 @@
     color: white;
     cursor: pointer;
   }
-  
-  .navbar .rightSide svg {
+
+
+.navbar .rightSide svg {
     font-size: 40px;
-  } 
+} 
+
+.hidden-links{
+    display:none;
+}
+
+.navbar #open{
+    padding-left: 0px;
+}
+
+.navbar #open img{
+    display:none;   
+}
+
+.navbar #open .hidden-links{
+    display: flex;
+    margin-left: 1rem;
+}
+
+.navbar #close .hidden-links{
+    display: none;
+}
+
+.navbar #open a{
+    width: auto;
+    margin: 1rem;
+}
+
+/* For screen less than 700px */
+@media only screen and (max-width: 700px) {
+    .navbar .rightSide a{
+        display: none;
+    }
+
+    .navbar .rightSide button{
+        display: block;
+    }
+
+    .navbar .middle{
+        display:none;
+    }
+
+    .navbar .leftSide p{
+        display: none;
+    }
+
+    .navbar .leftSide img{
+        display:inline-flex;
+        width: 120px;
+        justify-content: center;
+        
+    }
+
+}
+
+
+
+/* For screen less than 1004 px */
+@media only screen and (max-width: 1004px){
+    .navbar{
+        height: 6rem;
+    }
+}
+
+/* For screen greater than 700px */
+@media only screen and (min-width:700px){
+    .navbar .rightSide button{
+        display:none;
+    }
+
+    .navbar .leftSide img{
+        display:none;
+    }
+
+    .navbar #open .hidden-links{
+        display: none;
+    }
+
+}
