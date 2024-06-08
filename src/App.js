@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from "./components/Navbar.js";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from "./pages/Home.js";
+import About from "./pages/About.js"
 
 // Logo Citation For Project: <a href="https://www.vecteezy.com/free-vector/icons">Icons Vectors by Vecteezy</a>
 
@@ -9,12 +10,16 @@ import Home from "./pages/Home.js";
 function App() {
   return (
     <div className="App"> 
-      <Router>
-        <Navbar />
-        <Routes>
-            <Route path='/' element={<Home/>}/>
-        </Routes>
-      </Router>
+        <div className = "container">
+          <Router>
+            <Navbar />
+            <Routes>
+                <Route path='/' element={<Home/>}/>
+                <Route path='/about' element={<About/>}/>
+            </Routes>
+          </Router>
+        </div>
+
     </div>
   );
 }

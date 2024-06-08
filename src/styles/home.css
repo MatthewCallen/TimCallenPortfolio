@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    display: flex;
+    height: 100vh;
+    /* background-image: url('../assets/rock.jpg'); */
+    background-size: cover;
+    box-shadow: inset 0  0 2000px rgb(0, 0, 0, 1.5)
+}
+
+
+.content{
+    display:flex;
+    flex-direction: column;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:white;
+}
+
+
+.content h1{
+    font-size: 56px;
+    font-weight: bolder;
+}
+
+.content p{
+    font-size: 22px;
+    margin: 15px 0;
+    max-width: 550px;
+    letter-spacing: 2px;
+    cursor: default;
+}
+
+.content h2{
+    font-size: 28px;
+    margin: auto;
+}
+
+.content h3{
+    font-size: 22px;
+    margin: auto;
+}
+
+.content .about-button{
+    margin-top: 20px;
+}
+.content a{
+    color: black;
+    text-decoration: none;
+    background-color: rgb(245, 245, 220);
+    padding: 12px 24px;
+    font-size: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
