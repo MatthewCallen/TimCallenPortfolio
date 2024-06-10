@@ -14,10 +14,16 @@ function App() {
         <div className = "container">
           <Router>
             <Navbar />
-            <Routes>
+            <section id='home'>
+              <Home/>
+            </section>
+            <section id ='about'>
+              <About/>
+            </section>
+            {/* <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/about' element={<About/>}/>
-            </Routes>
+            </Routes> */} 
             <Footer/>
           </Router>
         </div>

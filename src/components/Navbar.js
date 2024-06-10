@@ -36,10 +36,10 @@ function Navbar() {
         <p>Timothy Callen</p>
         <img src={WhiteCamel} alt="WhiteCamel"/>
         <div className='hidden-links'>
-          <Link to='/'> Home</Link>
-          <Link to='/about'> About</Link>
-          <Link to='/work'> Work</Link>
-          <Link to='/contact'> Contact</Link>
+          <a href ='/'>Home</a>
+          <a href ='#about'>About</a>
+          <a href = '#work'>Work</a>
+          <a href = '#contact'>Contact</a>
         </div>
       </div>
 
@@ -57,10 +57,14 @@ function Navbar() {
         )}
         {isWideScreen && (
           <>
-            <Link to='/'> Home</Link>
+          <a href ='/'>Home</a>
+          <a href ='#about'>About</a>
+          <a href = '#work'>Work</a>
+          <a href = '#contact'>Contact</a>
+            {/* <Link to='/'> Home</Link>
             <Link to='/about'> About</Link>
             <Link to='/work'> Work</Link>
-            <Link to='/contact'> Contact</Link>
+            <Link to='/contact'> Contact</Link> */}
           </>
         )}
       </div>

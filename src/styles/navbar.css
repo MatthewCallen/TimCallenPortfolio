@@ -56,6 +56,12 @@
     margin: 1rem;
 }
 
+.navbar .rightSide a:hover{
+    color: rgb(194, 134, 4);
+    font-weight: bold;
+    text-underline-offset: 8px;
+}
+
 .navbar .rightSide button {
     color: white;
     background-color: transparent;
@@ -94,6 +100,13 @@
     width: auto;
     margin: 1rem;
 }
+
+.navbar #open a:hover {
+    color: rgb(194, 134, 4);
+    font-weight: bold;
+    text-underline-offset: 8px;
+}
+
 
 
 

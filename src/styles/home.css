@@ -3,7 +3,9 @@
     height: 100vh;
     /* background-image: url('../assets/rock.jpg'); */
     background-size: cover;
-    box-shadow: inset 0  0 2000px rgb(0, 0, 0, 1.5)
+    box-shadow: inset 0  0 2000px rgb(0, 0, 0, 1.5);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.75));
+
 }
 
 
@@ -21,7 +23,7 @@
 
 
 .content h1{
-    font-size: 56px;
+    font-size: 65px;
     font-weight: bolder;
 }
 

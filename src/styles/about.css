@@ -1,23 +1,25 @@
 .about-hero {
-    background-color: black;
-    background-size: cover;
-    justify-content: center;
-    width: 100%;
     display: flex;
-    height: 100vh; /* Use viewport height to make it take up the full screen */
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    box-shadow: inset 0 0 2000px rgba(0, 0, 0, 1.5);
+    justify-content: center;
+    mask-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, .85));
 
 }
 
-.about-content{
+.about-content {
     justify-content: center;
 }
 
-.profile-container{
+.profile-container {
     margin: 20% 30rem 0 0;
     justify-content: center;
 }
 
-.profile-picture .profile-container img{
+.profile-picture .profile-container img {
     width: 150%;
     justify-content: center;
     position: relative;
