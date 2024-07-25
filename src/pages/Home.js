@@ -12,7 +12,7 @@ function Home() {
           <h1>Tim Callen</h1>
           <h3>Saudi Arabia Economist</h3>
           <div className='about-button'>
-            <a href='/about'>Get to know me</a>  
+            <a href='#about'>Get to know me</a>  
           </div>
         </div>
 

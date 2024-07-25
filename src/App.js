@@ -3,7 +3,8 @@ import Navbar from "./components/Navbar.js";
 import Footer from "./components/Footer.js";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from "./pages/Home.js";
-import About from "./pages/About.js"
+import About from "./pages/About.js";
+import Work from "./pages/Work.js";
 
 // Logo Citation For Project: <a href="https://www.vecteezy.com/free-vector/icons">Icons Vectors by Vecteezy</a>
 
@@ -19,6 +20,9 @@ function App() {
             </section>
             <section id ='about'>
               <About/>
+            </section>
+            <section id='work'>
+              <Work/>
             </section>
             {/* <Routes>
                 <Route path='/' element={<Home/>}/>

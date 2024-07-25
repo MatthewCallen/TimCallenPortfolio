@@ -1,27 +1,94 @@
-.about-hero {
-    display: flex;
-    height: 100vh;
-    background-size: cover;
-    background-position: top;
-    position: relative;
-    box-shadow: inset 0 0 2000px rgba(0, 0, 0, 1.5);
-    justify-content: center;
-    mask-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, .85));
-
-}
-
 .about-content {
+    background: linear-gradient(to bottom, #755236, white);
     justify-content: center;
 }
 
-.profile-container {
-    margin: 20% 30rem 0 0;
+
+
+.profile-container{
+    display:flex;
     justify-content: center;
+    align-items: center;
+    height: 50vh;
+    padding-top: 3rem;
+    /* padding-right: 20rem; */
 }
 
-.profile-picture .profile-container img {
-    width: 150%;
-    justify-content: center;
-    position: relative;
-    border-radius: 50%;
+.about-title{
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    width: fit-content;
 }
+
+.about-text{
+    margin: 5rem;
+    justify-content: right;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    font-size: 18px;
+}
+
+.profile-container img {
+    justify-content: center;
+    width: 20%;
+    padding: 2rem;
+    /* border-radius: 50%; */
+}
+
+@media only screen and (max-width: 1600px) {
+    .profile-picture .profile-container img {
+      width: 20%;
+      padding: 2rem;
+    }
+  }
+  
+  /* For screens with a max width of 1400px */
+  @media only screen and (max-width: 1400px) {
+    .profile-picture .profile-container img {
+      width: 30%;
+      padding: 2rem;
+    }
+  }
+  
+  /* For screens with a max width of 1200px */
+  @media only screen and (max-width: 1200px) {
+    .profile-picture .profile-container img {
+      width: 35%;
+      padding: 2rem;
+    }
+  }
+  
+  /* For screens with a max width of 1000px */
+  @media only screen and (max-width: 1000px) {
+    .profile-picture .profile-container img {
+      width: 40%;
+      padding: 2rem;
+
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .profile-picture .profile-container img {
+      width: 45%;
+      padding: 2rem;
+
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .profile-picture .profile-container img {
+      width: 50%;
+      padding: 2rem;
+
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .profile-picture .profile-container img {
+      width: 60%;
+      padding: 2rem;
+
+    }
+  }

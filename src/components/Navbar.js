@@ -45,6 +45,7 @@ function Navbar() {
 
       <div className='middle'>
         <img src={WhiteCamel} alt="WhiteCamel"/>
+
       </div>
 
       <div className='rightSide'>

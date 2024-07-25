@@ -1,0 +1,46 @@
+.work {
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.work .workTitle {
+  font-family: cursive;
+  font-size: 60px;
+  margin: 20px 0;
+}
+
+.workList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
+  row-gap: 80px;
+  column-gap: 100px;
+  padding-bottom: 15px;
+}
+
+.publicationItem .background-image {
+  max-width: 350px;
+  height: auto;
+  display: block;
+}
+
+.publicationItem .background-image:hover {
+  cursor: pointer; /* Changes the cursor to a pointer */
+  width: 600px;
+  height: auto;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Proper box-shadow syntax */
+}
+
+@media only screen and (max-width: 1300px) {
+  .workList {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .workList {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
