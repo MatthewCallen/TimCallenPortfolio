@@ -1,23 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from "./components/Navbar.js";
+import Footer from "./components/Footer.js";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from "./pages/Home.js";
+import About from "./pages/About.js";
+import Work from "./pages/Work.js";
+
+// Logo Citation For Project: <a href="https://www.vecteezy.com/free-vector/icons">Icons Vectors by Vecteezy</a>
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App"> 
+        <div className = "container">
+          <Router>
+            <Navbar />
+            <section id='home'>
+              <Home/>
+            </section>
+            <section id ='about'>
+              <About/>
+            </section>
+            <section id='work'>
+              <Work/>
+            </section>
+            {/* <Routes>
+                <Route path='/' element={<Home/>}/>
+                <Route path='/about' element={<About/>}/>
+            </Routes> */} 
+            <Footer/>
+          </Router>
+        </div>
+
     </div>
   );
 }
